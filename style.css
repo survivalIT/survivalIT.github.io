@@ -1,13 +1,11 @@
 h1 {
-    font: courier;
-    font-size: 60px;
+   
+    font-size: 50px;
     text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     display: inline;
-    color: rgb(0, 114, 16);
-    border: 10px solid rgb(0, 114, 16);
-    background-color: rgb(143, 143, 143);
+    color: black;
     margin: 10px;
     
 }
@@ -15,6 +13,22 @@ h2 {
     font: courier;
     font-size: 30px;
     text-align: center;
+    display: block;
+}
+h2:hover {
+    background-color: rgb(143, 143, 143);
+}
+h3 {
+    font: courier;
+    font-size: 20px;
+    color: black;
+    display: inline;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+h3:hover {
+    background-color: rgb(143, 143, 143);
 }
 h4 {
     font: courier;
@@ -25,13 +39,17 @@ h4 {
     padding: 5px;
     border: 1px solid black;
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 114, 16);
 }
 h5 {
     font: courier;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 0px;
 }
 body {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(199, 199, 199);
 }
 main {
     flex: 1;
@@ -51,7 +69,7 @@ main {
 }
 .grid-container > div {
     z-index: 0;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(199, 199, 199);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -68,9 +86,18 @@ ul {
     margin-right: 25px;
 }
 a {
-    /*dont need this bc i use h2 but still here for shigs*/
-    font: courier;
+    padding: 0px;
 }
+
+
+hr {
+    border: 1px solid black; /* Sets the color and style of the line */
+    margin: 20px 0; /* Adds space above and below the line */
+}
+
+
+
+/*
 .ad-space {
     
 }
@@ -81,3 +108,4 @@ a {
     padding: 20px 0;
     font-size: 30px;
 }
+*/
