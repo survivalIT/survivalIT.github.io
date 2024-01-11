@@ -32,9 +32,12 @@ h3:hover {
 }
 h4 {
     font: courier;
+    display: flex;
+    flex: 1;
+    justify-content: center;
     text-align:center;
     /*will not see this work if we dont need to scroll*/
-    position: sticky;
+    position: relative;
     top: 0;
     padding: 5px;
     border: 1px solid black;
@@ -54,12 +57,9 @@ body {
 main {
     flex: 1;
 }
-.grid-container {
+.flex-container {
     z-index: 0;
-    display: grid;
-    /*1fr, 2fr, ... evenly divides it
-    auto fits the container to the content*/
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 10px;
     background-color: rgb(0, 114, 16);
     padding: 10px;
@@ -67,8 +67,11 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.grid-container > div {
+.flex-container > div {
     z-index: 0;
+    flex: 1;
+    position: relative;
+    justify-content: center;
     background-color: rgb(199, 199, 199);
     text-align: center;
     padding: 20px 0;
